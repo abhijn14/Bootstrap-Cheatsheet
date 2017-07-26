@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Cheat Sheet</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--We can even use bootstrap.css as bootstrap.min.css and bootstrap.css are almost the same files-->
+    <!-- The only difference is that bootstrap.mini.css removes all extra spaces, comments from CSS file and minimizes it as much as possible -->
+
+  </head>
+  <!-- The below line refreshes browser automatically after noticing any change in code -->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <body>
+
+    <!-- Typography-->
+    <div class="container"> <!-- Container class automatically takjes care of alignment and padding making it compatible for all devices-->
+      <h1 class="page-header">Hello, world!<small>Secondary texts</small></h1>
+      <!-- Small tag can be used for secondary text which will be smaller in size and will be shown along with the heading-->
+      <p class="lead">
+        <mark>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</mark>
+        <!-- mark tag will highlight the text
+        del tag will strikeout the text
+        and u tag will underline the text-->
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, <del>quis nostrud exercitation</del> ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis <u>aute irure dolor in reprehenderit in voluptate</u> velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <hr />
+
+      <!--Alignment & transformation-->
+      <p class="text-left text-lowercase">
+        Left Aligned Text
+      </p>
+      <p class="text-center text-uppercase">
+        Center Aligned Text
+      </p>
+      <p class="text-right text-capitalize">
+        Right aligned text
+      </p>
+      <p class="text-justify">
+        Justified Text
+      </p>
+      <p class="text-nowrap">
+        No wrap text
+      </p>
+
+          <!-- Quick Float -->
+          <div class="pull-right">
+            Div Floated to right
+          </div>
+
+          <div class="pull-left">
+            Div floated to left
+          </div>
+
+          <!--Clear Float-->
+
+          <div class="clearfix"> <!--Beacuse hr tag was creating a horizontal line which was striking the text-->
+          </div>
+
+          <hr />
+
+          <!--BloockQuote-->
+          <blockquote class="blockquote-reverse">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <footer>
+              Quote by <cite title="Abhi Jain">Abhi Jain</cite>
+            </footer>
+          </blockquote>
+          <hr />
+
+          <!-- Lists -->
+          <ul class="list-unstyled">
+            <li>
+              Item One
+            </li>
+            <li>
+              Item Two
+            </li>
+            <li>
+              Item Three
+            </li>
+            <li>
+              Item Four
+            </li>
+          </ul>
+
+          <ul class="list-inline"> <!-- list-linline is good for creating menus-->
+            <li>
+              Item One
+            </li>
+            <li>
+              Item Two
+            </li>
+            <li>
+              Item Three
+            </li>
+            <li>
+              Item Four
+            </li>
+          </ul>
+
+          <!-- Code -->
+          <code>&lt;h1&gt;Heading Text&lt;/h1&gt;</code> <!-- lt and gt are for greater than and less than symbols -->
+          <br />Change Directory with <kbd>cd</kbd> <!--kbd is for putting text in a box-->
+          <br />
+          To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+
+          <hr />
+
+          <!-- Contextual Colors -->
+          <p class="text-primary">Hello World!</p> <!--text-primary gives sky blue colored text-->
+          <p class="text-success">Hello World!</p> <!-- text-success gives green colored text -->
+          <p class="text-info">Hello World!</p> <!-- text-info gives light blue colored text -->
+          <p class="text-warning">Hello World!</p> <!-- text-warning gives slightly brown colored text -->
+          <p class="text-danger">Hello World!</p> <!-- Red colored text -->
+          <p class="text-muted">Hello World!</p> <!--Greyish text -->
+
+          <!-- Contextual Background Colors -->
+          <p class="bg-primary">Hello World!</p> <!--bg-primary gives dark blue background to whole row-->
+          <p class="bg-success">Hello World!</p> <!-- bg-success gives light greenish background -->
+          <p class="bg-info">Hello World!</p> <!-- Light blue colored background -->
+          <p class="bg-warning">Hello World!</p> <!-- Creamish colored background -->
+          <p class="bg-danger">Hello World!</p> <!-- Baby Pink Background -->
+          <p class="bg-muted">Hello World!</p> <!-- White background!! -->
+    </div>
+
+    <hr />
+
+      <!-- Buttons -->
+    <div class="container">
+
+      <button class="btn btn-default">Button</button>
+      <a href="#" class="btn btn-default" role="button">Link</a>
+      <input type="submit" class="btn btn-default" value="Submit" />
+      <br />
+
+      <!-- Contextual Buttons -->
+      <button class="btn btn-default">Button</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-danger">Delete</button>
+      <button class="btn btn-link">Link</button> <!-- Button with no borders -->
+      <br />
+
+      <!-- Button Sizes -->
+      <button class="btn btn-default btn-lg">Button</button> <!-- For large button -->
+      <button class="btn btn-default">Button</button>
+      <button class="btn btn-default btn-sm">Button</button>
+      <button class="btn btn-default btn-xs" disabled="disabled">Button</button> <!-- disabled buttons are unclickable -->
+    </div>
+
+    <!-- Forms -->
+    <div class="container">
+    <form>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" placeholder="Add Name" />
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="Add Email" />
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea class="form-control" placeholder="Add Messasge"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Gender</label>
+        <select class="form-control">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Upload File</label>
+        <input type="file" />
+        <p class="help-block">
+          Only png and jpg allowed
+        </p>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" />Check me output
+         </label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <hr />
+
+    <form class="form-inline">
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="Email" />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Password" />
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" /> Remember
+        </label>
+        <button type="submit" class="btn btn-default">Login</button>
+    </form>
+    </div>
+  </container>
+
+    <div style="height:400px"></div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
